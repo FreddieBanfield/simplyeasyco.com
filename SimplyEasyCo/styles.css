@@ -1,0 +1,314 @@
+*{
+  margin: 0;
+}
+
+/*HEADER*/
+header{
+    display: block;
+    z-index: 999;
+}
+
+.top-header{
+    font-size: 14px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.bg-secondary {
+    background: #98B4D4;
+}
+
+.bg-white{
+    background: white;
+}
+
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.moto{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+}
+
+.login{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-white{
+    color: white;
+}
+
+.list-inline{
+    padding-left: 0;
+    list-style: none;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.navigation {
+    box-shadow: 0px 9px 30px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.navbar-logo img{
+    max-width: 200px;
+    padding-right: 500px;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+
+/*BODY*/
+body{
+    background: #dbe5f0;
+    /*
+    background-image: url(https://simplyeasyco.files.wordpress.com/2021/05/blank-logo.png);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    */
+}
+
+.home-main-content{
+    max-width: 1000px;
+    display: block;
+    position:relative;
+    padding-top: 225px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-main-content h3{
+    padding-top: 30px;
+}
+
+.box-layout{
+    padding: 50px 0;
+    box-shadow: 0px 4px 20px 0px;
+}
+
+.light-font{
+    color: #386474;
+}
+
+#contact-form{
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  /*transition: 1000ms;
+  animation: 1s ease-out 0s 1 slideInFromLeft;*/
+  color: #386474;
+  max-width: 80em;
+}
+
+a {
+    color: #386474;
+}
+
+.prod_img{
+    max-width: 20em;
+}
+
+.prod_img_slide{
+    max-width: 30em;
+}
+
+.prod_content_box{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.prod_desc{
+    padding: 0 1em;
+}
+
+.prod_box{
+    border: 3px solid #386474;
+    box-shadow: 0px 9px 20px 0px;
+    margin: 30px 30px;
+    padding: 20px;
+    text-align: center;
+    color: #386474;
+    max-width: 20em;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+}
+
+.prodd_video_box{
+    border: 3px solid #386474;
+    box-shadow: 0px 9px 20px 0px;
+    margin: 30px 30px;
+    padding: 20px;
+    text-align: center;
+    color: #386474;
+    max-width: 30em;    
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+}
+
+.prod_structure{
+    padding: 0 40px;
+    margin: 20px;
+}
+
+.about_box{
+    border: 3px solid #386474;
+    box-shadow: 0px 9px 20px 0px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    color: #386474;
+    max-width: 40em;
+    vertical-align: middle;
+}
+
+.enlarge{
+
+  transition: transform .2s;
+
+}
+
+.enlarge:hover{
+
+  transform: scale(1.05);
+
+}
+
+.prod_overlay{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.lm_title{
+    font-size: 2em;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.prod_overlay:hover{
+  opacity: 1;
+}
+
+.wishlist_form_content{
+    align-content:flex-start;
+    display: block;
+}
+
+.wishlist{
+    
+}
+
+.wishlist-img{
+    box-shadow: 0px 9px 20px 0px;
+    margin: 30px 30px;
+    padding: 0px;
+    text-align: center;
+    color: #386474;
+    max-width: 20em;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+}
+
+
+@keyframes pulse{
+    0% {
+        transform: scale(0.9);
+        //box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+    }
+    
+    50%{
+        transform: scale(1);
+       // box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+    }
+    
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+@keyframes slideInFromLeft {
+
+  0% {
+
+    transform: translateY(100%);
+
+    opacity: 0%;
+
+  }
+
+  100% {
+
+    transform: translateY(0);
+
+    opacity: 100%;
+
+  }
+
+}
