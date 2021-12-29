@@ -8,7 +8,7 @@ Features:
 - Login to user
 - Add products to wishlist
 - Remove products from wishlist
-- Rearrange products by price, quanitity, title...
+- Rearrange products by price, quantity, title...
 
 
 Backend features:
